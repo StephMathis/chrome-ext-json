@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Json utils",
+  "description": "Json utils",
+  "version": "1.1",
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [{
+    "js": ["scripts/format_json.js", "scripts/content.js"],
+    "matches": ["https://*/*", "file://*/*"]
+  }],
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+        "16": "images/icon-16x16.png",
+        "32": "images/icon-32x32.png"
+      }    
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}
