@@ -73,7 +73,7 @@ chrome.action.onClicked.addListener(async (tab) => {
       files: ["css/json-utils.css"],
       target: { tabId: tab.id },
     });
-  }
+P  }
 /*
   (async () => {
     const [tab] = await chrome.tabs.query({active: true, lastFocusedWindow: true});

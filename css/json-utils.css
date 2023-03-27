@@ -3,8 +3,8 @@ body {
 }
 
 .json-container {
-	font-family: 'Open Sans';
-	font-size: 16px;
+	font-family: monospace;
+	font-size: 11px;
 	background-color: #fff;
 	color: #808080;
 	box-sizing: border-box;
